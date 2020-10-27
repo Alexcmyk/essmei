@@ -176,6 +176,7 @@ section.hero {
   background-size: cover;
   background-position: center center;
   padding: 120px 0 120px 0;
+  margin-bottom: 30px;
 }
 
 section.hero h2 {
@@ -193,6 +194,56 @@ div.intro {
   max-width: 440px;
 }
 
+.filters {
+  margin-bottom: 20px;
+}
+
+nav.filters a {
+  font-size: 16px;
+  color: #000;
+  margin-right: 15px;
+}
+
+section.products {
+  margin-bottom: 40px;
+}
+
+div.product {
+  position: relative;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(254, 234, 52, 0.7);
+  transition: all 200ms ease-in;
+}
+
+.product h4,
+.product p {
+  font-weight: 700;
+}
+
+.product p {
+  position: absolute;
+  font-size: 36px;
+  bottom: 15px;
+  left: 15px;
+}
+
+.product h4 {
+  font-size: 18px;
+}
+
+div.product:hover div.overlay {
+  opacity: 1;
+}
+
 /* Utilities */
 
 .container {
@@ -205,4 +256,15 @@ div.intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.selected {
+  font-weight: 700;
+  border-bottom: 3px solid #feea34;
+  padding-bottom: 3px;
 }
