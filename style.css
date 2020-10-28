@@ -252,6 +252,11 @@ div.product:hover div.overlay {
   opacity: 1;
 }
 
+/* Adds min height to products so it doesnt shrink when using filters */
+.products {
+  min-height: 650px;
+}
+
 /* Utilities */
 
 .container {
@@ -371,5 +376,11 @@ nav.filters .show-filters {
 
   ul.filters-list {
     display: none;
+  }
+}
+
+@media (min-width: 501px) {
+  .filters-list {
+    display: block !important;
   }
 }
