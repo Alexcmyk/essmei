@@ -368,4 +368,8 @@ nav.filters .show-filters {
   nav.filters a {
     font-size: 14px;
   }
+
+  ul.filters-list {
+    display: none;
+  }
 }
