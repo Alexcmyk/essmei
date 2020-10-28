@@ -204,6 +204,14 @@ nav.filters a {
   margin-right: 15px;
 }
 
+nav.filters li {
+  display: inline;
+}
+
+.show-filters {
+  display: none;
+}
+
 section.products {
   margin-bottom: 40px;
 }
@@ -269,6 +277,10 @@ div.product:hover div.overlay {
   padding-bottom: 3px;
 }
 
+nav.filters .show-filters {
+  color: #bfbfb7;
+}
+
 /* Media Queries */
 
 @media (max-width: 860px) {
@@ -291,6 +303,19 @@ div.product:hover div.overlay {
   .container {
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  nav.filters li,
+  .show-filters {
+    display: block;
+  }
+
+  .show-filters {
+    margin-bottom: 5px;
+  }
+
+  nav.filters li {
+    margin-bottom: 5px;
   }
 
   section.hero h2 {
